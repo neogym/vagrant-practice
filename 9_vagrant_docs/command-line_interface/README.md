@@ -143,6 +143,18 @@
 
 ## up
 
+**コマンド:**`vagrant up`
+
+`Vagrantfile`に従って、仮想マシンを起動および構成します。
+
+### options
+
+* `--[no-]destroy-on-error` - 起動時にエラーが発生した場合に、仮想マシンを削除するかどうか指定。
+* `--[no-]parallel` - 複数構成の仮想マシンを、並列に起動するかどうか指定。
+* `--provider x` - プロバイダを指定。デフォルトは`virtualbox`。
+* `--provision` - プロビジョン(仮想マシンのセットアップ)を強制する場合に指定。
+* `--provision-with x,y,z` - どのプロビジョンを実行するか指定。(例:`Vagrantfile`に、`:shell`および`:chef_solo`が定義してある場合に、`vagrant provision --provision-with shell`を実行すると`shell`のみがプロビジョニングされる)
+
 ## version
 
 ## More Commands
