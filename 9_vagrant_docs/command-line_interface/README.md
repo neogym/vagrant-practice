@@ -102,9 +102,25 @@
 
 ## destroy
 
+**コマンド:**`vagrant destroy`
+
+起動中の仮想マシンを削除します。
+
+### options
+
+* `-f` または `--force` - 強制的に削除。
+
 ## global-status
 
 ## halt
+
+**コマンド:**`vagrant halt`
+
+起動中の仮想マシンをシャットダウンします。
+
+### options
+
+* `-f` または `--force` - 強制的にシャットダウン。
 
 ## init
 
@@ -180,6 +196,10 @@
 
 ## resume
 
+**コマンド:**`vagrant resume`
+
+一時停止中の仮想マシンを復帰します。
+
 ## share
 
 ## ssh
@@ -187,6 +207,10 @@
 ## status
 
 ## suspend
+
+**コマンド:**`vagrant suspend`
+
+起動中の仮想マシンを一時停止します。
 
 ## up
 
