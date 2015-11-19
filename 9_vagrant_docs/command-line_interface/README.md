@@ -76,7 +76,7 @@
 
 #### options
 
-* `--box-version VALUE` - バージョンを指定。
+* `--box-version VALUE` - バージョンを指定。
 * `--force` - ボックスを使用中でも強制的に削除。
 * `--provider VALUE` - プロバイダを指定。
 
