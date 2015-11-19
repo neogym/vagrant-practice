@@ -125,6 +125,53 @@
 
 ## plugin
 
+**コマンド:**`vagrant plugin`
+
+`Vagrant`のプラグインを管理するコマンドです。
+
+**サブコマンド**
+
+* `install`
+* `license`
+* `list`
+* `uninstall`
+* `update`
+
+### pulugin istall
+
+**コマンド:**`vagrant plugin install <name>...`
+
+プラグインをインストールします。
+
+* `--entry-point ENTRYPOINT` - ***TODO***
+* `--plugin-source SOURCE` - ***TODO***
+* `--plugin-version VERSION` - プラグインのバージョンを指定。(例:`"1.2.3"`、`"> 1.0.2"`、`"> 1.0.2, < 1.1.0"`)
+
+### pulugin license
+
+**コマンド:**`vagrant plugin license <name> <license-file>`
+
+***TODO***
+
+### pulugin list
+
+**コマンド:**`vagrant plugin list`
+
+インストールされているプラグインの一覧を表示します。
+
+### pulugin uninstall
+
+**コマンド:**`vagrant plugin uninstall <name> [<name2> <name3> ...]`
+
+プラグインをアンインストールします。
+
+### pulugin update
+
+**コマンド:**`vagrant plugin update [<name>]`
+
+プラグインを最新に更新します。  
+もし、特定のバージョンのプラグインを使いたい場合は、`vagrant plugin install`で再インストールしてください。
+
 ## provision
 
 ## rdp
@@ -156,6 +203,13 @@
 * `--provision-with x,y,z` - どのプロビジョンを実行するか指定。(例:`Vagrantfile`に、`:shell`および`:chef_solo`が定義してある場合に、`vagrant provision --provision-with shell`を実行すると`shell`のみがプロビジョニングされる)
 
 ## version
+
+**コマンド**`vagrant version`
+
+インストールされている`Vagrant`のバージョンと、利用可能な最新バージョンを表示します。
+
+このコマンドはネットワーク通信が発生します。  
+インストールされている`Vagrant`のバージョンだけを確認したい場合は、`vagrant --version`を実行してください。
 
 ## More Commands
 
