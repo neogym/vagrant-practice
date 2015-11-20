@@ -100,6 +100,16 @@
 
 ## connect
 
+**コマンド:**`vagrant connect NAME`
+
+***TODO***
+
+### options
+
+* `--disable-static-ip` - 
+* `--static-ip IP` - 
+* `--ssh` - 
+
 ## destroy
 
 **コマンド:**`vagrant destroy`
@@ -111,6 +121,18 @@
 * `-f` または `--force` - 強制的に削除。
 
 ## global-status
+
+**コマンド:**`vagrant global-status`
+
+カレントユーザが管理する仮想マシンの状態を表示します。(例:`running`、`suspended`、`not created`)
+
+### options
+
+* `--prune` - ***TODO***
+
+### environment not showing up
+
+***TODO***
 
 ## halt
 
@@ -137,7 +159,47 @@
 
 ## login
 
+**コマンド:**`vagrant login`
+
+***TODO***
+
+### options
+
+* `--check` - 
+* `--logout` - 
+* `--token` - 
+
+### examples
+
+```
+$ vagrant login
+# ...
+Atlas username:
+Atlas password:
+```
+
+```
+$ vagrant login --check
+You are already logged in.
+```
+
+```
+$ vagrant login --token ABCD1234
+The token was successfully saved.
+```
+
 ## package
+
+**コマンド:**`vagrant package`
+
+***TODO***
+
+### options
+
+* `--base NAME` - 
+* `--output NAME` - 
+* `--include x,y,z` - 
+* `--vagrantfile FILE` - 
 
 ## plugin
 
@@ -190,9 +252,37 @@
 
 ## provision
 
+**コマンド:**`vagrant provision`
+
+起動中の仮想マシンにプロビジョンする。
+
+### options
+
+* `--provision-with x,y,z` - どのプロビジョンを実行するか指定。(例:`Vagrantfile`に、`:shell`および`:chef_solo`が定義してある場合に、`vagrant provision --provision-with shell`を実行すると`shell`のみがプロビジョニングされる)
+
 ## rdp
 
+**コマンド:**`vagrant rdp`
+
+***TODO***
+
+### raw argments
+
+```
+vagrant rdp -- /span
+...
+```
+
 ## reload
+
+**コマンド:**`vagrant reload`
+
+***TODO***
+
+### options
+
+* `--provision` - プロビジョン(仮想マシンのセットアップ)を強制する場合に指定。
+* `--provision-with x,y,z` - どのプロビジョンを実行するか指定。(例:`Vagrantfile`に、`:shell`および`:chef_solo`が定義してある場合に、`vagrant provision --provision-with shell`を実行すると`shell`のみがプロビジョニングされる)
 
 ## resume
 
@@ -202,9 +292,52 @@
 
 ## share
 
+**コマンド:**`vagrant share`
+
+***TODO***
+
+### options
+
+* `--disable-http` - 
+* `--http PORT` - 
+* `--https PORT` - 
+* `--ssh` - 
+* `--ssh-no-password` - 
+* `--ssh-port PORT` - 
+* `--ssh-once` - 
+
 ## ssh
 
+**コマンド:**`vagrant ssh`
+
+起動中の仮想マシンにSSHアクセスします。
+
+***TODO:`--`について***
+
+### options
+
+* `-c COMMAND` または `--command COMMAND` - コマンドを実行。
+* `-p` または `--plain` - ***TODO***
+
+### background execution
+
+***TODO***
+
+## ssh-config
+
+**コマンド:**`vagrant ssh-config`
+
+***TODO***
+
+### options
+
+* `--host NAME` - 
+
 ## status
+
+**コマンド:**`vagrant status`
+
+カレントディレクトリの仮想マシンの状態を表示します。(例:`running`、`suspended`、`not created`)
 
 ## suspend
 
@@ -237,9 +370,10 @@
 
 ## More Commands
 
-## Machine Readable
+***TODO***
 
-## Output
+## Machine Readable Output
 
+***TODO***
 
 以上
